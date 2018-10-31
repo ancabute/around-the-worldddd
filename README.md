@@ -158,7 +158,7 @@ objectives:
        }, 
     flight2:
     {
-      “numar zbor”: “X”,
+      “numar zbor”: “Y”,
       “pret”: 50,
       “categorie”:”Economy”,
       “destinatie”:”Londra- aeroportul pe care se aterizeaza”,
@@ -172,7 +172,7 @@ objectives:
         }, 
     flight3:
     {
-        “numar zbor”: “X”,
+        “numar zbor”: “Z”,
         “pret”: 50,
         “categorie”:”Economy”,
         “destinatie”:”Londra- aeroportul pe care se aterizeaza”,
