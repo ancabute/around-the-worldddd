@@ -191,4 +191,34 @@ objectives:
 9. **POST /user/reservations** - înregistrarea rezervărilor în profilul utilizatorului
  10. **GET /user/reservations** - afișarea istoricului rezervărilor utilizatorului
 - răspuns: 
+```javascript
+ [
+    reservation1:
+    { 
+        “location”: “X”,
+        “price”: 50,
+        “date”:”01-01-2018”,
+        “tip”:”REZERVARE HOTEL”,
+        “companie”:”some hotel”
+       }, 
+    reservation2:
+    {
+      “location”: “Y”,
+        “price”: 50,
+        “date”:”02-02-2018”,
+        “tip”:”BILET AVION”,
+        “companie”:”Wizz Air”
+
+        }, 
+   reservation3:
+    {
+        “location”: “Z”,
+        “price”: 50,
+        “date”:”03-03-2018”,
+        “tip”:”REZERVARE HOTEL”,
+        “companie”:”some hotel”
+    }
+]
+
+```
  11. **POST /check-out** - finalizare plată
