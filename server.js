@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
-app.use('/', express.static('public'))
-app.listen(8080)
+
 
 
 const Sequelize = require('sequelize')
@@ -13,8 +12,8 @@ const sequelize = new Sequelize('travel', 'root', '', {
 
 sequelize.authenticate().then(() => {
     console.log("Connected to database")
-}).catch(() => {
-    console.log("Unable to connect to database")
+}).catch((err) => {
+    console.log(err)
 })
 
 const Users = sequelize.define('users', {
@@ -483,3 +482,6 @@ app.delete('/payments/:id', (request, response) => {
         response.status(500).send('database error')
     })
 })
+
+app.use('/', express.static('public'))
+app.listen(process.env.PORT, process.env.IP);
